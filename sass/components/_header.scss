@@ -1,0 +1,32 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  padding: 16px 15px;
+}
+
+.burger-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  @include centeredFlex;
+
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+  @media screen and (min-width: $mobile-bp) {
+    display: none;
+  }
+}
+
+.header_flex {
+  @media screen and (min-width: $mobile-bp) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

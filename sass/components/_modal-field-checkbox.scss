@@ -1,0 +1,50 @@
+.checkbox {
+  position: relative;
+  margin-left: 13px;
+  margin-bottom: 30px;
+}
+
+.checkbox__icon {
+  fill: $color-white;
+  border: 2px solid $title-text-color;
+  border-radius: 3px;
+  margin-right: 7px;
+
+  .checkbox__input:checked + & {
+    border: none;
+    background-color: $accent-color;
+  }
+
+  @include transition(background-color, border);
+}
+
+.checkbox__input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.checkbox__label {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.2;
+  // font-size: 14px;
+  // line-height: 1.7;
+}
+
+.checkbos__terms {
+  color: $accent-color;
+}
+
+.button__form_flex {
+  @include centeredFlex;
+  margin: 0 auto;
+
+  @include transition(background-color);
+}
+
+.button__form_flex:hover,
+.button__form_flex:focus {
+  background-color: $hero-button-color;
+}

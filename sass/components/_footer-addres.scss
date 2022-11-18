@@ -1,0 +1,39 @@
+.footer-navigation {
+  @media screen and (min-width: $mobile-bp) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 70px;
+  }
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  text-align: center;
+  margin-bottom: 70px;
+
+  @media screen and (min-width: $mobile-bp) {
+    row-gap: 9px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.address-list__link {
+  text-decoration: none;
+  font-style: normal;
+  color: $footer-contacts-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @include transition(color);
+}
+
+.address-list__link_white {
+  color: $color-white;
+}
