@@ -7,9 +7,9 @@
 
   color: $color-white;
 
-  @media screen and (min-width: $mobile-bp) {
-    text-align-last: left;
-  }
+  // @media screen and (min-width: $tablet-bp) {
+  //   text-align: left;
+  // }
 }
 
 .join-container__text_margin {
@@ -28,7 +28,7 @@
 
 .icon-list_footer-margin {
   margin-bottom: 60px;
-  @media screen and (min-width: $mobile-bp) {
+  @media screen and (min-width: $tablet-bp) {
     margin-bottom: 0;
   }
 }

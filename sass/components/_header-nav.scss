@@ -1,13 +1,14 @@
 .navigation {
   display: flex;
   align-items: center;
-  gap: 93px;
+  // gap: 93px;
+  column-gap: 87px;
 }
 
 .navigation__list {
   display: none;
 
-  @media screen and (min-width: $mobile-bp) {
+  @media screen and (min-width: $tablet-bp) {
     display: flex;
     gap: 50px;
   }

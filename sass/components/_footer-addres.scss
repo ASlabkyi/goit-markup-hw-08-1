@@ -1,5 +1,5 @@
 .footer-navigation {
-  @media screen and (min-width: $mobile-bp) {
+  @media screen and (min-width: $desktop-bp) {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -14,7 +14,7 @@
   text-align: center;
   margin-bottom: 70px;
 
-  @media screen and (min-width: $mobile-bp) {
+  @media screen and (min-width: $desktop-bp) {
     row-gap: 9px;
     text-align: left;
     margin-bottom: 0;
