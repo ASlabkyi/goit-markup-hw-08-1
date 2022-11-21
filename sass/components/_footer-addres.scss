@@ -1,11 +1,11 @@
-.footer-navigation {
-  @media screen and (min-width: $desktop-bp) {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    column-gap: 70px;
-  }
-}
+// .footer-navigation {
+//   @media screen and (min-width: $desktop-bp) {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: baseline;
+//     column-gap: 70px;
+//   }
+// }
 
 .address-list {
   display: flex;
@@ -13,6 +13,10 @@
   row-gap: 8px;
   text-align: center;
   margin-bottom: 70px;
+
+  @media screen and (min-width: $tablet-bp) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: $desktop-bp) {
     row-gap: 9px;

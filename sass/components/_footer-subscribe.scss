@@ -1,6 +1,12 @@
 .subscribe-form {
   @media screen and (min-width: $tablet-bp) {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop-bp) {
+    display: flex;
     justify-content: center;
     align-items: flex-end;
     column-gap: 12px;
@@ -35,6 +41,10 @@
   outline: none;
 
   @media screen and (min-width: $tablet-bp) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop-bp) {
     width: 358px;
   }
 }
@@ -43,7 +53,7 @@
   padding-left: 16px;
   margin-bottom: 20px;
 
-  @media screen and (min-width: $tablet-bp) {
+  @media screen and (min-width: $desktop-bp) {
     margin-bottom: 0;
   }
 }
@@ -54,7 +64,7 @@
   }
   @include transition(background-color);
 
-  @media screen and (max-width: $tablet-bp) {
+  @media screen and (max-width: $desktop-bp) {
     margin-left: auto;
     margin-right: auto;
   }

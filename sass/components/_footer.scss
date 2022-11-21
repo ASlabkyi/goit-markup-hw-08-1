@@ -6,3 +6,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+@media screen and (min-width: $tablet-bp) {
+  .footer-thumb {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
