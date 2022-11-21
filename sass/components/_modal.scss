@@ -18,8 +18,8 @@
   transform: translate(-50%, -50%) scale(1);
   @include transition(transform);
 
-  width: 450px;
-  height: 609px;
+  // max-width: 450px;
+  // max-height: 609px;
   padding: 40px;
 
   background-color: $color-white;

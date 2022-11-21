@@ -7,10 +7,15 @@
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: $tablet-bp) {
-  .footer-thumb {
+.footer-thumb {
+  @media screen and (min-width: $tablet-bp) {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+  }
+
+  @media screen and (min-width: $desktop-bp) {
+    justify-content: start;
+    column-gap: 70px;
   }
 }

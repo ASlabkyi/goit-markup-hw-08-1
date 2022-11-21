@@ -7,9 +7,9 @@
 
   color: $color-white;
 
-  // @media screen and (min-width: $tablet-bp) {
-  //   text-align: left;
-  // }
+  @media screen and (min-width: $desktop-bp) {
+    text-align: left;
+  }
 }
 
 .join-container__text_margin {

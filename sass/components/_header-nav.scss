@@ -1,8 +1,11 @@
 .navigation {
   display: flex;
   align-items: center;
-  // gap: 93px;
   column-gap: 87px;
+
+  @media screen and (min-width: $desktop-bp) {
+    gap: 92px;
+  }
 }
 
 .navigation__list {

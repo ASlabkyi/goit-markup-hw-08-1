@@ -1,11 +1,11 @@
-// .footer-navigation {
-//   @media screen and (min-width: $desktop-bp) {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: baseline;
-//     column-gap: 70px;
-//   }
-// }
+.footer-navigation {
+  @media screen and (min-width: $desktop-bp) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    column-gap: 70px;
+  }
+}
 
 .address-list {
   display: flex;
