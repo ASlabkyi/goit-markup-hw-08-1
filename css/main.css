@@ -88,6 +88,12 @@ img {
   line-height: 1.17;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
 
 .icon-list {
   display: -webkit-box;
@@ -210,6 +216,11 @@ img {
   line-height: 1.2;
   text-decoration: none;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 
 .logo_header-black {
@@ -827,9 +838,9 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-column-gap: 70px;
-       -moz-column-gap: 70px;
-            column-gap: 70px;
+    -webkit-column-gap: 93px;
+       -moz-column-gap: 93px;
+            column-gap: 93px;
   }
 }
 
@@ -1037,22 +1048,46 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .portfolio-filter_margin {
-  margin-bottom: 50px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-filter_margin {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-filter_margin {
+    padding-bottom: 50px;
+  }
 }
 
 .portfolio-filter__button {
@@ -1089,19 +1124,15 @@ img {
   padding: 6px 25px;
 }
 
-.works-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
+@media screen and (max-width: 767px) {
+  .works-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
-
 .works-list__link {
   display: block;
   text-decoration: none;
-  max-width: 370px;
+  max-width: 100%;
   position: relative;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
@@ -1128,7 +1159,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -1150,14 +1181,20 @@ img {
   color: #ffffff;
   font-size: 18px;
   line-height: 1.56;
+  text-align: center;
 }
 
 .works-list__decor {
   padding: 20px 24px;
-  max-width: 370px;
+  max-width: 100%;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .works-list__decor {
+    padding: 20px 24px 56px 24px;
+  }
 }
 
 .works-list__title {
@@ -1182,8 +1219,6 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  padding-left: 15px;
-  padding-right: 15px;
   -webkit-transition-property: opacity, visibility;
   transition-property: opacity, visibility;
   -webkit-transition-duration: 250ms;
@@ -1207,6 +1242,7 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  max-width: 450px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1215,6 +1251,17 @@ img {
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    height: 581px;
+  }
 }
 
 .close-button {
@@ -1253,6 +1300,11 @@ img {
   line-height: 1.5;
   text-align: center;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__label {
@@ -1385,6 +1437,12 @@ img {
   position: relative;
   font-size: 12px;
   line-height: 1.2;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .checkbos__terms {

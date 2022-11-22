@@ -29,8 +29,11 @@
   position: relative;
   font-size: 12px;
   line-height: 1.2;
-  // font-size: 14px;
-  // line-height: 1.7;
+
+  @media screen and (min-width: $desktop-bp) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .checkbos__terms {

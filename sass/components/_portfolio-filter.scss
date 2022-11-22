@@ -1,11 +1,24 @@
 .portfolio-filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
+
+  @media screen and (min-width: $tablet-bp) {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 
 .portfolio-filter_margin {
-  margin-bottom: 50px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $tablet-bp) and (max-width: 1199px) {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop-bp) {
+    padding-bottom: 50px;
+  }
 }
 
 .portfolio-filter__button {

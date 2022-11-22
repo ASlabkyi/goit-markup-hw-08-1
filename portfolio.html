@@ -28,7 +28,7 @@
               <a class="navigation__link" href="./index.html">Студія</a>
             </li>
             <li>
-              <a class="navigation__link  current" href="./portfolio.html">Портфоліо</a>
+              <a class="navigation__link current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li>
               <a class="navigation__link" href="#">Контакти</a>
@@ -53,6 +53,11 @@
           </li>
         </ul>
       </div>
+      <button class="burger-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-burger-button"></use>
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -75,10 +80,29 @@
           </li>
         </ul>
         <ul class="works-list">
-          <li>
+          <li class="works-list__item">
             <a href="#" class="works-list__link">
               <div class="works-list__container">
-                <img src="./images/project-1.jpg" alt="Фотографії в ноутбуці" width="370" height="294" />
+
+                <picture>
+                  <source srcset="./images//project-1-mobile@1x.webp 1x, ./images//project-1-mobile@2x.webp 2x"
+                    type="image/webp" media="(max-width: 767px)">
+                  <source srcset="./images//project-1-mobile@1x.jpg 1x, ./images//project-1-mobile@2x.jpg 2x"
+                    type="image/jpg" media="(max-width: 767px)">
+
+                  <source srcset="./images//project-1-tablet@1x.webp 1x, ./images//project-1-tablet@2x.webp 2x"
+                    type="image/webp" media="(min-width: 768px) and (max-width: 1199px)">
+                  <source srcset="./images//project-1-tablet@1x.jpg 1x, ./images//project-1-tablet@2x.jpg 2x"
+                    type="image/jpg" media="(min-width: 768px) and (max-width: 1199px)">
+
+                  <source srcset="./images//project-1-desktop@1x.webp 1x, ./images//project-1-desktop@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1200px)">
+                  <source srcset="./images//project-1-desktop@1x.jpg 1x, ./images//project-1-desktop@2x.jpg 2x"
+                    type="image/jpg" media="(min-width: 1200px)">
+
+                  <img src="./images/project-1.jpg" alt="Фотографії в ноутбуці" width="370" />
+                </picture>
+
                 <div class="works-list__descr">
                   <p class="works-list-descr__info">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -92,10 +116,10 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="works-list__item">
             <a href="#" class="works-list__link">
               <div class="works-list__container">
-                <img src="./images/project-2.jpg" alt="Двоє людей грають у баскетбол" width="370" height="294" />
+                <img src="./images/project-2.jpg" alt="Двоє людей грають у баскетбол" width="370" />
                 <div class="works-list__descr">
                   <p class="works-list-descr__info">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -109,10 +133,10 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="works-list__item">
             <a href="#" class="works-list__link">
               <div class="works-list__container">
-                <img src="./images/project-3.jpg" alt="Логотип компанії" width="370" height="294" />
+                <img src="./images/project-3.jpg" alt="Логотип компанії" width="370" />
                 <div class="works-list__descr">
                   <p class="works-list-descr__info">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -126,10 +150,10 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="works-list__item">
             <a href="#" class="works-list__link">
               <div class="works-list__container">
-                <img src="./images/project-4.jpg" alt="Навушники" width="370" height="294" />
+                <img src="./images/project-4.jpg" alt="Навушники" width="370" />
                 <div class="works-list__descr">
                   <p class="works-list-descr__info">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -143,10 +167,10 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="works-list__item">
             <a href="#" class="works-list__link">
               <div class="works-list__container">
-                <img src="./images/project-5.jpg" alt="Дві коробки" width="370" height="294" />
+                <img src="./images/project-5.jpg" alt="Дві коробки" width="370" />
                 <div class="works-list__descr">
                   <p class="works-list-descr__info">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -160,10 +184,10 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="works-list__item">
             <a href="#" class="works-list__link">
               <div class="works-list__container">
-                <img src="./images/project-6.jpg" alt="IMac" width="370" height="294" />
+                <img src="./images/project-6.jpg" alt="IMac" width="370" />
                 <div class="works-list__descr">
                   <p class="works-list-descr__info">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -177,10 +201,10 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="works-list__item">
             <a href="#" class="works-list__link">
               <div class="works-list__container">
-                <img src="./images/project-7.jpg" alt="Відкрита книга" width="370" height="294" />
+                <img src="./images/project-7.jpg" alt="Відкрита книга" width="370" />
                 <div class="works-list__descr">
                   <p class="works-list-descr__info">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -194,10 +218,10 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="works-list__item">
             <a href="#" class="works-list__link">
               <div class="works-list__container">
-                <img src="./images/project-8.jpg" alt="Брелок з літерами" width="370" height="294" />
+                <img src="./images/project-8.jpg" alt="Брелок з літерами" width="370" />
                 <div class="works-list__descr">
                   <p class="works-list-descr__info">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -211,10 +235,10 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="works-list__item">
             <a href="#" class="works-list__link">
               <div class="works-list__container">
-                <img src="./images/project-9.jpg" alt="Людина оглядає сторінку в інтернеті" width="370" height="294" />
+                <img src="./images/project-9.jpg" alt="Людина оглядає сторінку в інтернеті" width="370" />
                 <div class="works-list__descr">
                   <p class="works-list-descr__info">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -306,6 +330,60 @@
       </form>
     </div>
   </footer>
+
+  <!-- Mobile menu -->
+
+  <div class="mobile-menu js-menu-container">
+    <button class="mobile-menu-close-button js-close-menu" type="button">
+      <svg class="mobile-menu-close-button__icon" width="18" height="18">
+        <use href="./images/icons.svg#icon-close-button"></use>
+      </svg>
+    </button>
+
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-menu-nav__list">
+        <li class="mobile-menu-nav__item">
+          <a class="mobile-menu-nav__link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu-nav__item">
+          <a class="mobile-menu-nav__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-nav__item">
+          <a class="mobile-menu-nav__link" href="#">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <ul class="mobile-menu-contacts">
+        <li class="mobile-menu-contacts__item">
+          <a class="mobile-menu-contacts__link mobile-menu-contacts__link_size-color" href="tel:+380961111111">+38 096
+            111 11
+            11</a>
+        </li>
+        <li class="mobile-menu-contacts__item">
+          <a class="mobile-menu-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-socials">
+        <li class="mobile-menu-socials__item">
+          <a href="#" class="mobile-menu-socials__link">Instagram</a>
+        </li>
+        <li class="mobile-menu-socials__item">
+          <a href="#" class="mobile-menu-socials__link">Twitter</a>
+        </li>
+        <li class="mobile-menu-socials__item">
+          <a href="#" class="mobile-menu-socials__link">Facebook</a>
+        </li>
+        <li class="mobile-menu-socials__item">
+          <a href="#" class="mobile-menu-socials__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
